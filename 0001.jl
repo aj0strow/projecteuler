@@ -5,12 +5,8 @@
 #
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-sum = 0
-for n = 1:1000
-  if n % 3 == 0 || n % 5 == 0
-    sum += n
-  end
-end
+ismultiple(n) = n % 3 == 0 || n % 5 == 0
+total = sum(filter(ismultiple, [ 1:1000 ]))
 
-println(sum)
+println(total)
 # 234168
