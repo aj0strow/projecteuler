@@ -4,7 +4,7 @@
 #
 # What is the largest prime factor of the number 600851475143 ?
 
-largest = maximum(keys(factor(600851475143)))
+largest = keys(factor(600851475143)) |> maximum
 
 println(largest)
 # 6857
